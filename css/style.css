@@ -1,0 +1,261 @@
+/*Google fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+
+:root {
+  /* --- Color ---*/
+  --primary-blue: #08203A;
+  --active-blue: #051628;
+  --lightblue: #007bff;
+  --active-lightblue: #006EE5;
+  --mid-blue: #3B7CAB;
+  --primary-grey: #B2BCC7;
+  --light-grey: #F3F3F3;
+  --darker-grey: #A0A9B3;
+  --alert-red: #E63946;
+  --active-red: #ff1a53;
+}
+
+
+/* Paramètre Global*/
+.tout {
+  background-color: #E0E0E0;
+  background: linear-gradient(107.56deg, #E0E0E0 0%, #F3F3F3 48.96%, #E0E0E0 100%);
+  color: var(--primary-blue);
+  font-family: 'Poppins', sans-serif;
+  font-size: 15px;
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+  padding: 0;
+}
+
+h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 8px;
+}
+
+/*=== Page-Login ===*/
+.formlog {
+  margin-top: 60px;
+  margin-bottom: 60px;
+  padding: 30px;
+  background-color: var(--primary-grey);
+  border-radius: 15px;
+  width: 400px;
+  height: 500px;
+  box-shadow: 0px 5px 4px rgba(0, 0, 0, 0.45);
+}
+
+.formlog .form-group {
+  margin-bottom: 30px;
+}
+
+.guidelog {
+  margin: 10px 0 30px 0;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: 600;
+}
+
+div.formlog input[type=email] {
+  border: none;
+  background-color: var(--light-grey);
+  border-bottom: 2px solid var(--darker-grey);
+
+}div.formlog input[type=password] {
+  border: none;
+  background-color: var(--light-grey);
+  border-bottom: 2px solid var(--darker-grey);
+}
+
+input::placeholder {
+  font-size: 14px;
+}
+
+input[type=email]:focus, input[type=password]:focus {
+  border: none;
+  background-color: var(--light-grey);
+  border-bottom: 2px solid var(--darker-grey);
+  box-shadow: 0 1px 2px #9098A1 inset;    
+}
+
+.ikon {
+  font-size: 50px;
+  margin: 0 auto;
+  width: 50px;
+}
+
+  /*bouton connecter*/
+      .connect {
+          list-style-type: none;
+          margin: 0 0 5px 0;
+          padding: 0;
+      }
+      .connect li a {
+          display: block;
+          background-color: var(--primary-blue);
+          color: var(--light-grey);
+          border-radius: 5px;
+          width: 125px;
+          text-decoration: none;
+          padding: 5px;
+          text-align: center;
+          font-weight:600;
+          font-size: 14px;
+      }
+      .connect li a:hover:not(.active) {
+          background-color: var(--active-blue);
+          color: var(--light-grey);
+      }
+
+      /*--Mot de passe oublié*/
+      .formlog a {
+          text-decoration: none;
+          color: var(--alert-red);
+      }
+      .formlog a:hover {
+          color: var(--active-red);
+      }
+
+/* === Top Menu === */
+  .topbar {
+    background-color: var(--primary-blue);
+    padding: 5px;
+  }
+
+  .ikonbell {
+    font-size: 20px;
+    color: var(--light-grey);
+  }
+
+  .ikonbell2 {
+    font-size: 20px;
+    color: var(--primary-blue);
+  }
+
+/*Side Navigation*/
+
+.side {
+  background-color: var(--primary-blue);
+  width: 220px;
+  padding-left: 0;
+}
+
+.sidenavi {
+  background-color: var(--primary-blue);
+  border: 1px solid var(--active-blue);
+  width: 220px;
+}
+
+.barnav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.barnav li a {
+  display: block;
+  color: var(--light-grey);
+  text-decoration: none;
+  padding: 10px 10px 10px 25px;
+  text-align: left;
+  border-top: 1px solid var(--active-blue);
+}
+
+.barnav li a:hover:not(.active) {
+  color: var(--active-lightblue);
+}
+
+.textmenu {
+  padding-left: 5px;
+}
+
+#admin-collapse, #product-collapse {
+  padding-left: 15px;
+  background-color: var(--active-blue);
+}
+
+/* Formulaire */
+
+.centerform {
+  width: 500px;
+}
+
+.formul {
+  width: 500px;
+  background-color: var(--bs-white);
+  padding: 20px;
+  margin:  10px;
+  border-radius: 10px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+.formbouton {
+  background-color: var(--lightblue);
+  color: var(--light-grey);
+  font-weight: 500;
+  margin-top: 15px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.5);
+}
+.formbouton:hover {
+  background-color: var(--active-lightblue);
+  color: var(--light-grey);
+}
+
+/*Tableau*/
+.tableau th{
+  color: var(--light-grey);
+  background-color: var(--mid-blue);
+  border-top: 1px solid var(--primary-blue);
+  border-bottom: 1px solid var(--primary-blue);
+}
+
+.tableau td {
+  border-top: none;
+  border-bottom: 1px solid #bbb;
+}
+
+.tableau tr:last-of-type>td {
+  border-top: none;
+  border-bottom: 1px solid var(--primary-blue);
+}
+
+.tableau tr:first-of-type>td {
+  border-top: 1px solid var(--primary-blue);
+}
+
+.toptab {
+  margin-bottom: 5px;
+}
+
+.statut {
+  padding-top: 7px;
+}
+
+.voir {
+  padding: 8px;
+}
+
+/*page commande carte */
+
+.cmdcardline {
+  height: 2px;
+  background-color: var(--primary-blue);
+}
+
+.imgcmdcard {
+  width: 90px;
+  height: 90px;
+}
+
+.resum {
+  width: 300px;
+}
